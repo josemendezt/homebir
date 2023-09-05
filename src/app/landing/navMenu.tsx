@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '../../components/button';
 import Link from 'next/link';
+import { ContactForm } from '@/components/contactForm';
 
 const NavMenu = () => {
   return (
@@ -13,12 +14,7 @@ const NavMenu = () => {
           <Link href="/howItWorks">How it Works</Link>
         </li>
         <li>
-          <Button
-            variant="outline"
-            className=" text-lg h-12 bg-primary hover:bg-transparent hover:text-primary hover:border-primary hover:border-2 text-white"
-          >
-            Contact us
-          </Button>
+          <ContactForm />
         </li>
       </ul>
     </nav>
