@@ -1,7 +1,7 @@
-import Meeting from '@/icons/meeting';
-import MagicHouse from '@/icons/magicHouse';
-import Developing from '@/icons/developing';
-import Navigating from '@/icons/navigating';
+import Meeting from '@/assets/icons/meeting';
+import MagicHouse from '@/assets/icons/magicHouse';
+import Developing from '@/assets/icons/developing';
+import Navigating from '@/assets/icons/navigating';
 
 export default function HowItWorks() {
   return (

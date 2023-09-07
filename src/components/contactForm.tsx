@@ -28,21 +28,22 @@ export function ContactForm() {
     setIsError(false);
     if (!email || !name || !msg) return setIsError(true);
 
+    //we should later add a loader and set the state in that moment
+    setMsgSent(true);
     emailjs
       .send(
-        '',
-        '',
+        process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID!,
         {
           from_name: name,
           from_email: email,
           message: msg,
         },
-        'YOUR_PUBLIC_KEY'
+        process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY!
       )
       .then(
         (result) => {
           console.log(result.text);
-          return setMsgSent(true);
         },
         (error) => {
           console.log(error.text);

@@ -1,5 +1,7 @@
+import AboutUs from './aboutUs/page';
 import CanvasWrapper from './demo/CanvasWrapper';
 import ButtonDemo from '@/app/landing/buttonDemo';
+import HowItWorks from './howItWorks/page';
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
         </div> */}
         <CanvasWrapper />
         <div className="flex  lg:ml-[10vw] md:w-screen ">
-          <div className="w-1/3  mt-24 ml-72 md:ml-2 sm:pt-12 md:w-screen md:bg-white md:bg-opacity-60 rounded-lg sm:h-screen ">
+          <div className="w-2/5  mt-24 ml-72 md:ml-2 sm:pt-12 md:w-screen md:bg-white md:bg-opacity-60 rounded-lg sm:h-screen ">
             <h1 className="text-6xl sm:text-3xl font-bold text-primary ">
               3D showcase for your housing developments
             </h1>
@@ -29,6 +31,10 @@ export default function Home() {
             </h2>
             <ButtonDemo />
           </div>
+        </div>
+        <div className="hidden sm:block -mt-[300px]">
+          <AboutUs />
+          <HowItWorks />
         </div>
       </section>
     </main>

@@ -43,6 +43,7 @@ import {
 } from '@/store/demoHooks';
 import TooltipWrapper from '../../components/tooltipWrapper';
 import { CamerasData } from '../constants/cameras';
+import { ContactForm } from '@/components/contactForm';
 
 const SideMenu = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -304,6 +305,16 @@ const SideMenu = () => {
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
+              </div>
+              <hr />
+              <div className="mt-20 flex justify-between">
+                <ContactForm />
+                <Button
+                  className=" text-lg h-12 bg-background text-secondary"
+                  onClick={() => setOpenMenu(false)}
+                >
+                  Close Menu
+                </Button>
               </div>
             </div>
           </div>
