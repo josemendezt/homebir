@@ -13,6 +13,7 @@ import { Input } from '@/components/input';
 import { Label } from '@/components/label';
 import { Textarea } from '@/components/textarea';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import emailjs from '@emailjs/browser';
 
 export function ContactForm() {
@@ -22,6 +23,8 @@ export function ContactForm() {
   const [open, setOpen] = useState(false);
   const [isError, setIsError] = useState(false);
   const [msgSent, setMsgSent] = useState(false);
+
+  const router = useRouter();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -64,7 +67,9 @@ export function ContactForm() {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button
-          onClick={() => setOpen(true)}
+          onClick={() => {
+            setOpen(!open);
+          }}
           variant="outline"
           className=" text-lg h-12 bg-primary hover:bg-transparent hover:text-primary hover:border-primary hover:border-2 text-white"
         >

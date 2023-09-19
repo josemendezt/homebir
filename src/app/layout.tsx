@@ -42,7 +42,7 @@ export default function RootLayout({
               height={90}
               priority
             />
-            <NavMenu />
+            {/* <NavMenu /> */}
           </div>
         </Link>
         {children}

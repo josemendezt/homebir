@@ -5,7 +5,7 @@ import { ContactForm } from '@/components/contactForm';
 
 const NavMenu = () => {
   return (
-    <nav className="text-secondary">
+    <nav className="text-secondary absolute right-4 top-4">
       <ul className="flex w-[400px] max-w-[40vw] justify-between sm:justify-end">
         <li className="pt-4 sm:hidden">
           <Link href="/aboutUs">About Us</Link>

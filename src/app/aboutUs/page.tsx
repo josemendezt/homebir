@@ -1,17 +1,19 @@
 import Image from 'next/image';
+import NavMenu from '../landing/navMenu';
 
 export default function AboutUs() {
   return (
     <main>
+      <NavMenu />
       <section id="about-us" className="mt-12">
         <h1 className="text-6xl text-center font-bold sm:text-2xl">
           About Us
         </h1>
         <Image
           alt="us"
-          width={700}
-          height={700}
-          src="/placeholder.jpeg"
+          width={600}
+          height={600}
+          src="/aboutUs.png"
           className="mx-auto mt-10"
         />
         <div className="bg-primary text-white pb-24 py-60 px-20 sm:py-4 sm:px-4 text-base -mt-48 sm:-mt-0 -z-10 h-[60vh]">

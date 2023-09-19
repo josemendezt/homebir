@@ -2,10 +2,12 @@ import Meeting from '@/assets/icons/meeting';
 import MagicHouse from '@/assets/icons/magicHouse';
 import Developing from '@/assets/icons/developing';
 import Navigating from '@/assets/icons/navigating';
+import NavMenu from '../landing/navMenu';
 
 export default function HowItWorks() {
   return (
     <main>
+      <NavMenu />
       <section className="mt-12">
         <h1 className="text-6xl text-center font-bold sm:text-2xl">
           How It Works
