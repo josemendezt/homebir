@@ -6,7 +6,7 @@
     "sourceType": "module"
   },
   "rules": {
-    "max-len": ["error", 120],
-    "quotes": [2, "single", { "avoidEscape": true }]
+    "max-len": ["error", 120]
+    // "quotes": [2, "single", { "avoidEscape": true }]
   }
 }
