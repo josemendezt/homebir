@@ -9,7 +9,7 @@ export const kitchenCabinets = [
     roughnessMap: '/textures/wood/Wood066_2K_Roughness.png',
     displacementMap: '/textures/wood/Wood066_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '2',
@@ -17,10 +17,9 @@ export const kitchenCabinets = [
     map: '/textures/Wood068_2K/Wood068_2K_Color.png',
     normalMap: '/textures/Wood068_2K/Wood068_2K_NormalGL.png',
     roughnessMap: '/textures/Wood068_2K/Wood068_2K_Roughness.png',
-    displacementMap:
-      '/textures/Wood068_2K/Wood068_2K_Displacement.png',
+    displacementMap: '/textures/Wood068_2K/Wood068_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '3',
@@ -30,7 +29,7 @@ export const kitchenCabinets = [
     roughnessMap: '/textures/Marble/Marble015_2K_Roughness.png',
     displacementMap: '/textures/Marble/Marble015_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '4',
@@ -38,12 +37,11 @@ export const kitchenCabinets = [
     map: '/textures/Metal032_2K/Metal032_2K_Color.png',
     normalMap: '/textures/Metal032_2K/Metal032_2K_NormalGL.png',
     roughnessMap: '/textures/Metal032_2K/Metal032_2K_Roughness.png',
-    displacementMap:
-      '/textures/Metal032_2K/Metal032_2K_Displacement.png',
+    displacementMap: '/textures/Metal032_2K/Metal032_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.6,
-  },
-];
+    metalness: 0.6
+  }
+]
 
 export const kitchenCountertop = [
   {
@@ -52,23 +50,19 @@ export const kitchenCountertop = [
     map: '/textures/Porcelain/Porcelain001_2K_Color.png',
     normalMap: '/textures/Porcelain/Porcelain001_2K_NormalGL.png',
     roughnessMap: '/textures/Porcelain/Porcelain001_2K_Roughness.png',
-    displacementMap:
-      '/textures/Porcelain/Porcelain001_2K_Displacement.png',
+    displacementMap: '/textures/Porcelain/Porcelain001_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '2',
     name: 'Black',
     map: '/textures/Porcelain-dark/Porcelain003_2K_Color.png',
-    normalMap:
-      '/textures/Porcelain-dark/Porcelain003_2K_NormalGL.png',
-    roughnessMap:
-      '/textures/Porcelain-dark/Porcelain003_2K_Roughness.png',
-    displacementMap:
-      '/textures/Porcelain-dark/Porcelain003_2K_Displacement.png',
+    normalMap: '/textures/Porcelain-dark/Porcelain003_2K_NormalGL.png',
+    roughnessMap: '/textures/Porcelain-dark/Porcelain003_2K_Roughness.png',
+    displacementMap: '/textures/Porcelain-dark/Porcelain003_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.8,
+    metalness: 0.8
   },
   {
     id: '3',
@@ -78,7 +72,7 @@ export const kitchenCountertop = [
     roughnessMap: '/textures/Marble/Marble015_2K_Roughness.png',
     displacementMap: '/textures/Marble/Marble015_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '4',
@@ -86,12 +80,11 @@ export const kitchenCountertop = [
     map: '/textures/Metal032_2K/Metal032_2K_Color.png',
     normalMap: '/textures/Metal032_2K/Metal032_2K_NormalGL.png',
     roughnessMap: '/textures/Metal032_2K/Metal032_2K_Roughness.png',
-    displacementMap:
-      '/textures/Metal032_2K/Metal032_2K_Displacement.png',
+    displacementMap: '/textures/Metal032_2K/Metal032_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.6,
-  },
-];
+    metalness: 0.6
+  }
+]
 
 export const bathTiles = [
   {
@@ -100,10 +93,9 @@ export const bathTiles = [
     map: '/textures/Tiles107_2K/Tiles107_2K_Color.png',
     normalMap: '',
     roughnessMap: '/textures/Tiles107_2K/Tiles107_2K_Roughness.png',
-    displacementMap:
-      '/textures/Tiles107_2K/Tiles107_2K_Displacement.png',
+    displacementMap: '/textures/Tiles107_2K/Tiles107_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.1,
+    metalness: 0.1
   },
   {
     id: '2',
@@ -111,10 +103,9 @@ export const bathTiles = [
     map: '/textures/Tiles108_2K/Tiles108_2K_Color.png',
     normalMap: '',
     roughnessMap: '/textures/Tiles108_2K/Tiles108_2K_Roughness.png',
-    displacementMap:
-      '/textures/Tiles108_2K/Tiles108_2K_Displacement.png',
+    displacementMap: '/textures/Tiles108_2K/Tiles108_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '3',
@@ -122,10 +113,9 @@ export const bathTiles = [
     map: '/textures/Tiles081_2K/Tiles081_2K_Color.png',
     normalMap: '/textures/Tiles081_2K/Tiles081_2K_NormalGL.png',
     roughnessMap: '/textures/Tiles081_2K/Tiles081_2K_Roughness.png',
-    displacementMap:
-      '/textures/Tiles081_2K/Tiles081_2K_Displacement.png',
+    displacementMap: '/textures/Tiles081_2K/Tiles081_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '4',
@@ -133,51 +123,41 @@ export const bathTiles = [
     map: '/textures/Tiles075_2K/Tiles075_2K_Color.png',
     normalMap: '/textures/Tiles075_2K/Tiles075_2K_NormalGL.png',
     roughnessMap: '/textures/Tiles075_2K/Tiles075_2K_Roughness.png',
-    displacementMap:
-      '/textures/Tiles075_2K/Tiles075_2K_Displacement.png',
+    displacementMap: '/textures/Tiles075_2K/Tiles075_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
-  },
-];
+    metalness: 0.4
+  }
+]
 
 export const floors = [
   {
     id: '1',
     name: 'Light Wood',
     map: '/textures/WoodFloor051_2K/WoodFloor051_2K_Color.png',
-    normalMap:
-      '/textures/WoodFloor051_2K/WoodFloor051_2K_NormalGL.png',
-    roughnessMap:
-      '/textures/WoodFloor051_2K/WoodFloor051_2K_Roughness.png',
-    displacementMap:
-      '/textures/WoodFloor051_2K/WoodFloor051_2K_Displacement.png',
+    normalMap: '/textures/WoodFloor051_2K/WoodFloor051_2K_NormalGL.png',
+    roughnessMap: '/textures/WoodFloor051_2K/WoodFloor051_2K_Roughness.png',
+    displacementMap: '/textures/WoodFloor051_2K/WoodFloor051_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '2',
     name: 'Light Wood Chevron',
     map: '/textures/WoodFloor057_2K/WoodFloor057_2K_Color.png',
-    normalMap:
-      '/textures/WoodFloor057_2K/WoodFloor057_2K_NormalGL.png',
-    roughnessMap:
-      '/textures/WoodFloor057_2K/WoodFloor057_2K_Roughness.png',
-    displacementMap:
-      '/textures/WoodFloor057_2K/WoodFloor057_2K_Displacement.png',
+    normalMap: '/textures/WoodFloor057_2K/WoodFloor057_2K_NormalGL.png',
+    roughnessMap: '/textures/WoodFloor057_2K/WoodFloor057_2K_Roughness.png',
+    displacementMap: '/textures/WoodFloor057_2K/WoodFloor057_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
+    metalness: 0.4
   },
   {
     id: '3',
     name: 'Dark Wood',
     map: '/textures/WoodFloor048_2K/WoodFloor048_2K_Color.png',
-    normalMap:
-      '/textures/WoodFloor048_2K/WoodFloor048_2K_NormalGL.png',
-    roughnessMap:
-      '/textures/WoodFloor048_2K/WoodFloor048_2K_Roughness.png',
-    displacementMap:
-      '/textures/WoodFloor048_2K/WoodFloor048_2K_Displacement.png',
+    normalMap: '/textures/WoodFloor048_2K/WoodFloor048_2K_NormalGL.png',
+    roughnessMap: '/textures/WoodFloor048_2K/WoodFloor048_2K_Roughness.png',
+    displacementMap: '/textures/WoodFloor048_2K/WoodFloor048_2K_Displacement.png',
     roughness: 0.4,
-    metalness: 0.4,
-  },
-];
+    metalness: 0.4
+  }
+]

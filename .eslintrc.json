@@ -1,12 +1,13 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "extends": ["next/core-web-vitals"],
   "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["**/assets/**/*.tsx"],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "rules": {
-    "max-len": ["error", 120]
-    // "quotes": [2, "single", { "avoidEscape": true }]
+    "max-len": ["error", 150],
+    "quotes": [2, "single", { "avoidEscape": true }]
   }
 }

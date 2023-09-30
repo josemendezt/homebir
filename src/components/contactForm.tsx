@@ -1,5 +1,5 @@
-'use client';
-import { Button } from '@/components/button';
+'use client'
+import { Button } from '@/components/button'
 import {
   Dialog,
   DialogContent,
@@ -7,32 +7,32 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
-} from '@/components/dialog';
-import { Input } from '@/components/input';
-import { Label } from '@/components/label';
-import { Textarea } from '@/components/textarea';
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import emailjs from '@emailjs/browser';
+  DialogTrigger
+} from '@/components/dialog'
+import { Input } from '@/components/input'
+import { Label } from '@/components/label'
+import { Textarea } from '@/components/textarea'
+import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import emailjs from '@emailjs/browser'
 
 export function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [msg, setMsg] = useState('');
-  const [open, setOpen] = useState(false);
-  const [isError, setIsError] = useState(false);
-  const [msgSent, setMsgSent] = useState(false);
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [msg, setMsg] = useState('')
+  const [open, setOpen] = useState(false)
+  const [isError, setIsError] = useState(false)
+  const [msgSent, setMsgSent] = useState(false)
 
-  const router = useRouter();
+  const router = useRouter()
 
   const sendEmail = (e: any) => {
-    e.preventDefault();
-    setIsError(false);
-    if (!email || !name || !msg) return setIsError(true);
+    e.preventDefault()
+    setIsError(false)
+    if (!email || !name || !msg) return setIsError(true)
 
     //we should later add a loader and set the state in that moment
-    setMsgSent(true);
+    setMsgSent(true)
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID!,
@@ -40,35 +40,35 @@ export function ContactForm() {
         {
           from_name: name,
           from_email: email,
-          message: msg,
+          message: msg
         },
         process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY!
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        result => {
+          console.log(result.text)
         },
-        (error) => {
-          console.log(error.text);
+        error => {
+          console.log(error.text)
         }
-      );
-  };
+      )
+  }
 
   const resetForm = () => {
-    setOpen(false);
-    setEmail('');
-    setName('');
-    setMsg('');
-    setIsError(false);
-    setMsgSent(false);
-  };
+    setOpen(false)
+    setEmail('')
+    setName('')
+    setMsg('')
+    setIsError(false)
+    setMsgSent(false)
+  }
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button
           onClick={() => {
-            setOpen(!open);
+            setOpen(!open)
           }}
           variant="outline"
           className=" text-lg h-12 bg-primary hover:bg-transparent hover:text-primary hover:border-primary hover:border-2 text-white"
@@ -83,8 +83,7 @@ export function ContactForm() {
         {msgSent ? (
           <div className="text-center">
             <div className="color-primary text-left">
-              Your message was sent succesfuly, we will contact you
-              shortly!
+              Your message was sent succesfuly, we will contact you shortly!
             </div>
             <Button className="mt-4 w-28" onClick={resetForm}>
               Got it!
@@ -102,7 +101,7 @@ export function ContactForm() {
                   name="name"
                   placeholder="John Doe"
                   className="col-span-3"
-                  onChange={(e) => setName(e.target.value)}
+                  onChange={e => setName(e.target.value)}
                 />
               </div>
               <div className="grid grid-cols-4 items-center gap-4">
@@ -114,7 +113,7 @@ export function ContactForm() {
                   name="email"
                   placeholder="test@email.com"
                   className="col-span-3"
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={e => setEmail(e.target.value)}
                 />
               </div>
               <div className="grid grid-cols-4 items-center gap-4">
@@ -126,14 +125,10 @@ export function ContactForm() {
                   name="message"
                   placeholder="Your message goes here..."
                   className="col-span-3"
-                  onChange={(e) => setMsg(e.target.value)}
+                  onChange={e => setMsg(e.target.value)}
                 />
               </div>
-              {isError && (
-                <div className=" text-red-600 text-center">
-                  Please complete all the fields
-                </div>
-              )}
+              {isError && <div className=" text-red-600 text-center">Please complete all the fields</div>}
             </div>
             <DialogFooter>
               <Button onClick={sendEmail}>Send Message</Button>
@@ -142,5 +137,5 @@ export function ContactForm() {
         )}
       </DialogContent>
     </Dialog>
-  );
+  )
 }

@@ -1,9 +1,9 @@
-'use client';
-import React from 'react';
-import SideMenu from './sideMenu';
-import Link from 'next/link';
-import { ArrowLeft } from 'lucide-react';
-import CanvasWrapper from './CanvasWrapper';
+'use client'
+import React from 'react'
+import SideMenu from './sideMenu'
+import Link from 'next/link'
+import { ArrowLeft } from 'lucide-react'
+import CanvasWrapper from './CanvasWrapper'
 
 const Demo = () => {
   return (
@@ -16,7 +16,7 @@ const Demo = () => {
       <SideMenu />
       <CanvasWrapper />
     </div>
-  );
-};
+  )
+}
 
-export default Demo;
+export default Demo

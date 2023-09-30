@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Windows = React.memo(({ nodes, materials }: any) => {
   return (
@@ -25,12 +25,7 @@ const Windows = React.memo(({ nodes, materials }: any) => {
             geometry={nodes.WindowL002.geometry}
             material={materials.Window_material}
           ></mesh>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.WindowL002_1.geometry}
-            material={materials.Glass_material}
-          >
+          <mesh castShadow receiveShadow geometry={nodes.WindowL002_1.geometry} material={materials.Glass_material}>
             <meshStandardMaterial
               attach="material"
               transparent
@@ -55,12 +50,7 @@ const Windows = React.memo(({ nodes, materials }: any) => {
             geometry={nodes.WindowR002.geometry}
             material={materials.Window_material}
           ></mesh>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.WindowR002_1.geometry}
-            material={materials.Glass_material}
-          >
+          <mesh castShadow receiveShadow geometry={nodes.WindowR002_1.geometry} material={materials.Glass_material}>
             <meshStandardMaterial
               attach="material"
               transparent
@@ -102,24 +92,9 @@ const Windows = React.memo(({ nodes, materials }: any) => {
          *********
           */}
       <group position={[5.828, 0.043, -9.314]} scale={1.264}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Window006.geometry}
-          material={materials.PVC}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Window006_1.geometry}
-          material={materials.Plastic}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Window006_2.geometry}
-          material={materials.Glass}
-        >
+        <mesh castShadow receiveShadow geometry={nodes.Window006.geometry} material={materials.PVC} />
+        <mesh castShadow receiveShadow geometry={nodes.Window006_1.geometry} material={materials.Plastic} />
+        <mesh castShadow receiveShadow geometry={nodes.Window006_2.geometry} material={materials.Glass}>
           <meshStandardMaterial
             attach="material"
             transparent
@@ -129,12 +104,7 @@ const Windows = React.memo(({ nodes, materials }: any) => {
             side={materials.Glass_material.side}
           />
         </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Window006_3.geometry}
-          material={materials.Marble}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Window006_3.geometry} material={materials.Marble} />
       </group>
       {/*
          *********
@@ -144,7 +114,9 @@ const Windows = React.memo(({ nodes, materials }: any) => {
          *********
           */}
     </>
-  );
-});
+  )
+})
 
-export default Windows;
+Windows.displayName = 'Windows'
+
+export default Windows

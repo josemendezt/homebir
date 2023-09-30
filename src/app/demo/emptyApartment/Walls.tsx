@@ -1,15 +1,10 @@
-import React from 'react';
+import React from 'react'
 
 const Walls = React.memo(({ nodes, materials }: any) => {
   return (
     <>
       <group position={[-2.972, 0.02, 1.26]} scale={0.791}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Bathroom_Wall.geometry}
-          material={materials.Wall_material}
-        >
+        <mesh castShadow receiveShadow geometry={nodes.Bathroom_Wall.geometry} material={materials.Wall_material}>
           <meshStandardMaterial
             attach="material"
             color="#e7dbcb"
@@ -22,12 +17,7 @@ const Walls = React.memo(({ nodes, materials }: any) => {
             side={materials.Wall_material.side}
           />
         </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Bathroom_Wall.geometry}
-          material={materials.Wall_material}
-        >
+        <mesh castShadow receiveShadow geometry={nodes.Bathroom_Wall.geometry} material={materials.Wall_material}>
           <meshStandardMaterial
             attach="material"
             color="#e7dbcb"
@@ -41,12 +31,7 @@ const Walls = React.memo(({ nodes, materials }: any) => {
           />
         </mesh>
         {/* Bathroom Floor */}
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Floor.geometry}
-          material={materials.Floor_material}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Floor.geometry} material={materials.Floor_material} />
       </group>
       <mesh
         castShadow
@@ -111,7 +96,9 @@ const Walls = React.memo(({ nodes, materials }: any) => {
         />
       </mesh>
     </>
-  );
-});
+  )
+})
 
-export default Walls;
+Walls.displayName = 'Walls'
+
+export default Walls

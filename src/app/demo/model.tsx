@@ -1,15 +1,13 @@
-import { useGLTF, Center } from '@react-three/drei';
-import * as THREE from 'three';
-import { memo, useRef } from 'react';
-import { useKitchenCabinets } from '@/store/demoHooks';
-import { useFrame } from '@react-three/fiber';
+import { useGLTF, Center } from '@react-three/drei'
+import * as THREE from 'three'
+import { memo, useRef } from 'react'
+import { useKitchenCabinets } from '@/store/demoHooks'
+import { useFrame } from '@react-three/fiber'
 const Model = memo(() => {
-  const { nodes, materials } = useGLTF(
-    '/model/proyectoplatzicopy.2.glb'
-  ) as any;
+  const { nodes, materials } = useGLTF('/model/proyectoplatzicopy.2.glb') as any
 
-  const { material } = useKitchenCabinets();
-  const currentMaterial = material || materials['Madera Pino'];
+  const { material } = useKitchenCabinets()
+  const currentMaterial = material || materials['Madera Pino']
   return (
     <Center position-y={1}>
       <group dispose={null}>
@@ -104,17 +102,8 @@ const Model = memo(() => {
             />
           </mesh>
         </mesh>
-        <group
-          position={[-0.05, 1.41, -0.15]}
-          rotation={[Math.PI / 2, 0, 0]}
-          scale={0.68}
-        >
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Plane003.geometry}
-            material={materials.Acero}
-          >
+        <group position={[-0.05, 1.41, -0.15]} rotation={[Math.PI / 2, 0, 0]} scale={0.68}>
+          <mesh castShadow receiveShadow geometry={nodes.Plane003.geometry} material={materials.Acero}>
             <meshStandardMaterial
               attach="material"
               color={materials.Acero.color}
@@ -123,12 +112,7 @@ const Model = memo(() => {
               side={THREE.DoubleSide} // Permite ver el material en ambos lados del objeto
             />
           </mesh>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Plane003_1.geometry}
-            material={materials.Pantalla}
-          >
+          <mesh castShadow receiveShadow geometry={nodes.Plane003_1.geometry} material={materials.Pantalla}>
             <meshStandardMaterial
               attach="material"
               color={materials.Pantalla.color}
@@ -138,23 +122,9 @@ const Model = memo(() => {
             />
           </mesh>
         </group>
-        <group
-          position={[-1.29, 1.62, 0.06]}
-          rotation={[-Math.PI, 0.22, 2.27]}
-          scale={0.09}
-        >
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Lampara1.geometry}
-            material={materials['Lampara-Celeste']}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Lampara1_1.geometry}
-            material={materials['Luz-bombillo']}
-          />
+        <group position={[-1.29, 1.62, 0.06]} rotation={[-Math.PI, 0.22, 2.27]} scale={0.09}>
+          <mesh castShadow receiveShadow geometry={nodes.Lampara1.geometry} material={materials['Lampara-Celeste']} />
+          <mesh castShadow receiveShadow geometry={nodes.Lampara1_1.geometry} material={materials['Luz-bombillo']} />
         </group>
         <mesh
           castShadow
@@ -197,13 +167,7 @@ const Model = memo(() => {
             side={THREE.DoubleSide} // Permite ver el material en ambos lados del objeto
           />
         </mesh>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Paredes.geometry}
-          material={materials.Paredes}
-          scale={5}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Paredes.geometry} material={materials.Paredes} scale={5} />
         <mesh
           castShadow
           receiveShadow
@@ -239,7 +203,7 @@ const Model = memo(() => {
         />
       </group>
     </Center>
-  );
-});
-
-export default Model;
+  )
+})
+Model.displayName = 'ModelTable'
+export default Model

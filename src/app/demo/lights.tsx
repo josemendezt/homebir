@@ -1,7 +1,7 @@
-import { useHelper } from '@react-three/drei';
-import * as THREE from 'three';
-import React, { useRef } from 'react';
-import { useControls } from 'leva';
+import { useHelper } from '@react-three/drei'
+import * as THREE from 'three'
+import React, { useRef } from 'react'
+import { useControls } from 'leva'
 
 const Lights = React.memo(() => {
   //const dicLightHelp = useRef<any>();
@@ -26,19 +26,11 @@ const Lights = React.memo(() => {
         shadow-mapSize={[1024, 1024]}
       />
       {/* <pointLight distance={10} intensity={1} position={[0, 3, 3]} /> */}
-      <pointLight
-        distance={60}
-        intensity={0.4}
-        position={[10, 4, -8]}
-      />
-      <pointLight
-        distance={60}
-        intensity={0.4}
-        position={[-8, 4, 8]}
-      />
+      <pointLight distance={60} intensity={0.4} position={[10, 4, -8]} />
+      <pointLight distance={60} intensity={0.4} position={[-8, 4, 8]} />
       <ambientLight intensity={0.5} />
     </>
-  );
+  )
 
   /* return (
     <>
@@ -92,6 +84,8 @@ const Lights = React.memo(() => {
       /> 
     </>
   ); */
-});
+})
 
-export default Lights;
+Lights.displayName = 'Lights'
+
+export default Lights

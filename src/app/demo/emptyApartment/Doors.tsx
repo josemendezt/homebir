@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Doors = React.memo(({ nodes, materials }: any) => {
   return (
@@ -469,7 +469,9 @@ const Doors = React.memo(({ nodes, materials }: any) => {
         </mesh>
       </mesh>
     </>
-  );
-});
+  )
+})
 
-export default Doors;
+Doors.displayName = 'Doors'
+
+export default Doors

@@ -1,14 +1,11 @@
-import {
-  useBathroomFloor,
-  useBathroomWalls,
-} from '@/store/demoHooks';
-import React from 'react';
-import { Plane } from '@react-three/drei';
+import { useBathroomFloor, useBathroomWalls } from '@/store/demoHooks'
+import React from 'react'
+import { Plane } from '@react-three/drei'
 
 const Bathroom = React.memo(({ nodes, materials }: any) => {
-  const { material: bathWalls } = useBathroomWalls();
+  const { material: bathWalls } = useBathroomWalls()
 
-  const { material: bathFloor } = useBathroomFloor();
+  const { material: bathFloor } = useBathroomFloor()
 
   return (
     <group>
@@ -140,23 +137,9 @@ const Bathroom = React.memo(({ nodes, materials }: any) => {
         scale={0.734}
       />
 
-      <group
-        position={[-2.171, 0.136, 1.346]}
-        rotation={[1.577, -0.037, -0.003]}
-        scale={0.734}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube017.geometry}
-          material={materials.Mirror}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube017_1.geometry}
-          material={materials.Glass_Back}
-        />
+      <group position={[-2.171, 0.136, 1.346]} rotation={[1.577, -0.037, -0.003]} scale={0.734}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube017.geometry} material={materials.Mirror} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube017_1.geometry} material={materials.Glass_Back} />
       </group>
       <mesh
         castShadow
@@ -167,58 +150,22 @@ const Bathroom = React.memo(({ nodes, materials }: any) => {
         rotation={[1.577, -0.037, -0.003]}
         scale={0.734}
       />
-      <group
-        position={[-2.171, 0.136, 1.346]}
-        rotation={[1.577, -0.037, -0.003]}
-        scale={0.734}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle.geometry}
-          material={materials.Steel_2}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle_1.geometry}
-          material={materials.Material}
-        />
+      <group position={[-2.171, 0.136, 1.346]} rotation={[1.577, -0.037, -0.003]} scale={0.734}>
+        <mesh castShadow receiveShadow geometry={nodes.Circle.geometry} material={materials.Steel_2} />
+        <mesh castShadow receiveShadow geometry={nodes.Circle_1.geometry} material={materials.Material} />
       </group>
-      <group
-        position={[-2.687, 0.107, 2.32]}
-        rotation={[-2.024, 1.564, 2.019]}
-        scale={0.791}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle002.geometry}
-          material={materials.ceramic}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle002_1.geometry}
-          material={materials.metal}
-        />
+      <group position={[-2.687, 0.107, 2.32]} rotation={[-2.024, 1.564, 2.019]} scale={0.791}>
+        <mesh castShadow receiveShadow geometry={nodes.Circle002.geometry} material={materials.ceramic} />
+        <mesh castShadow receiveShadow geometry={nodes.Circle002_1.geometry} material={materials.metal} />
         <group position={[0, 0.402, 0.139]}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Circle003.geometry}
-            material={materials.ceramic}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Circle003_1.geometry}
-            material={materials.metal}
-          />
+          <mesh castShadow receiveShadow geometry={nodes.Circle003.geometry} material={materials.ceramic} />
+          <mesh castShadow receiveShadow geometry={nodes.Circle003_1.geometry} material={materials.metal} />
         </group>
       </group>
     </group>
-  );
-});
+  )
+})
 
-export default Bathroom;
+Bathroom.displayName = 'Bathrrom'
+
+export default Bathroom

@@ -1,7 +1,7 @@
-import React from 'react';
-import Windows from './Windows';
-import Doors from './Doors';
-import Floor from './Floor';
+import React from 'react'
+import Windows from './Windows'
+import Doors from './Doors'
+import Floor from './Floor'
 
 const Base = React.memo(({ nodes, materials }: any) => {
   return (
@@ -30,7 +30,9 @@ const Base = React.memo(({ nodes, materials }: any) => {
         <Windows nodes={nodes} materials={materials} />
       </mesh>
     </>
-  );
-});
+  )
+})
 
-export default Base;
+Base.displayName = 'Base'
+
+export default Base

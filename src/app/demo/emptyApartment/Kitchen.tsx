@@ -1,38 +1,20 @@
-import React from 'react';
-import * as THREE from 'three';
-import {
-  useKitchenCabinets,
-  useKitchenCounterTops,
-} from '@/store/demoHooks';
+import React from 'react'
+import * as THREE from 'three'
+import { useKitchenCabinets, useKitchenCounterTops } from '@/store/demoHooks'
 
 const Kitchen = React.memo(({ nodes, materials }: any) => {
-  const { material: kitchenCabinet } = useKitchenCabinets();
+  const { material: kitchenCabinet } = useKitchenCabinets()
 
-  const { material: countertop } = useKitchenCounterTops();
+  const { material: countertop } = useKitchenCounterTops()
 
-  const currentMaterial =
-    kitchenCabinet as THREE.MeshStandardMaterial;
+  const currentMaterial = kitchenCabinet as THREE.MeshStandardMaterial
 
   return (
     <>
-      <group
-        position={[-2.687, 0.107, 2.32]}
-        rotation={[-2.024, 1.564, 2.019]}
-        scale={0.791}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle002_1.geometry}
-          material={materials.ceramic}
-        />
+      <group position={[-2.687, 0.107, 2.32]} rotation={[-2.024, 1.564, 2.019]} scale={0.791}>
+        <mesh castShadow receiveShadow geometry={nodes.Circle002_1.geometry} material={materials.ceramic} />
         <group position={[0, 0.402, 0.139]}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Circle003_1.geometry}
-            material={materials.ceramic}
-          />
+          <mesh castShadow receiveShadow geometry={nodes.Circle003_1.geometry} material={materials.ceramic} />
         </group>
       </group>
       <mesh
@@ -44,23 +26,14 @@ const Kitchen = React.memo(({ nodes, materials }: any) => {
         rotation={[1.577, -0.037, -0.003]}
         scale={0.734}
       />
-      <group
-        position={[1.268, 0.873, 4.312]}
-        rotation={[Math.PI, -0.846, Math.PI / 2]}
-        scale={0.086}
-      >
+      <group position={[1.268, 0.873, 4.312]} rotation={[Math.PI, -0.846, Math.PI / 2]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.BezierCurve008_1.geometry}
           material={materials['Touched Plastic Rough']}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.BezierCurve008_2.geometry}
-          material={materials.chrome}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.BezierCurve008_2.geometry} material={materials.chrome} />
       </group>
       <mesh
         castShadow
@@ -375,23 +348,9 @@ const Kitchen = React.memo(({ nodes, materials }: any) => {
         rotation={[0, -1.566, 0]}
         scale={0.691}
       />
-      <group
-        position={[2.88, 0.835, 3.59]}
-        rotation={[0, -1.566, 0]}
-        scale={0.691}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube213.geometry}
-          material={materials['Glass dark.001']}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube213_1.geometry}
-          material={materials['Basic glass.001']}
-        />
+      <group position={[2.88, 0.835, 3.59]} rotation={[0, -1.566, 0]} scale={0.691}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube213.geometry} material={materials['Glass dark.001']} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube213_1.geometry} material={materials['Basic glass.001']} />
       </group>
       <mesh
         castShadow
@@ -473,23 +432,14 @@ const Kitchen = React.memo(({ nodes, materials }: any) => {
           side={THREE.DoubleSide}
         />
       </mesh>
-      <group
-        position={[2.785, 1.062, 3.591]}
-        rotation={[0, -1.566, 0]}
-        scale={0.691}
-      >
+      <group position={[2.785, 1.062, 3.591]} rotation={[0, -1.566, 0]} scale={0.691}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Cube214.geometry}
           material={materials['Black Brushed Aluminum']}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube214_1.geometry}
-          material={materials['timer.001']}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Cube214_1.geometry} material={materials['timer.001']} />
       </group>
       <mesh
         castShadow
@@ -596,23 +546,14 @@ const Kitchen = React.memo(({ nodes, materials }: any) => {
           side={THREE.DoubleSide}
         />
       </mesh>
-      <group
-        position={[1.266, 0.754, 4.315]}
-        rotation={[Math.PI, -0.846, Math.PI]}
-        scale={0.691}
-      >
+      <group position={[1.266, 0.754, 4.315]} rotation={[Math.PI, -0.846, Math.PI]} scale={0.691}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Cylinder022.geometry}
           material={materials['Touched Plastic Rough']}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cylinder022_1.geometry}
-          material={materials.chrome}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Cylinder022_1.geometry} material={materials.chrome} />
       </group>
       <mesh
         castShadow
@@ -623,11 +564,7 @@ const Kitchen = React.memo(({ nodes, materials }: any) => {
         rotation={[Math.PI, -0.846, Math.PI]}
         scale={0.691}
       />
-      <group
-        position={[2.782, 1.055, 3.482]}
-        rotation={[Math.PI / 2, 0, 1.566]}
-        scale={0.014}
-      >
+      <group position={[2.782, 1.055, 3.482]} rotation={[Math.PI / 2, 0, 1.566]} scale={0.014}>
         <mesh
           castShadow
           receiveShadow
@@ -737,23 +674,9 @@ const Kitchen = React.memo(({ nodes, materials }: any) => {
         rotation={[Math.PI, -0.001, Math.PI]}
         scale={0.657}
       />
-      <group
-        position={[0.523, 1.044, 3.954]}
-        rotation={[-3.038, 0.069, 3.134]}
-        scale={0.657}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube032.geometry}
-          material={materials['Material.004']}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube032_1.geometry}
-          material={materials['Material.008']}
-        />
+      <group position={[0.523, 1.044, 3.954]} rotation={[-3.038, 0.069, 3.134]} scale={0.657}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube032.geometry} material={materials['Material.004']} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube032_1.geometry} material={materials['Material.008']} />
       </group>
       <mesh
         castShadow
@@ -810,32 +733,15 @@ const Kitchen = React.memo(({ nodes, materials }: any) => {
         rotation={[Math.PI, -0.001, Math.PI]}
         scale={0.657}
       />
-      <group
-        position={[0.28, 0.64, 4.318]}
-        rotation={[Math.PI, -0.001, Math.PI]}
-        scale={0.657}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube025.geometry}
-          material={materials.DarkMetal}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube025_1.geometry}
-          material={materials.GlassB}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube025_2.geometry}
-          material={materials.UITexture}
-        />
+      <group position={[0.28, 0.64, 4.318]} rotation={[Math.PI, -0.001, Math.PI]} scale={0.657}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube025.geometry} material={materials.DarkMetal} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube025_1.geometry} material={materials.GlassB} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube025_2.geometry} material={materials.UITexture} />
       </group>
     </>
-  );
-});
+  )
+})
 
-export default Kitchen;
+Kitchen.displayName = 'Kitchen'
+
+export default Kitchen

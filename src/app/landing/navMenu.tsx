@@ -1,7 +1,7 @@
-import React from 'react';
-import { Button } from '../../components/button';
-import Link from 'next/link';
-import { ContactForm } from '@/components/contactForm';
+import React from 'react'
+import { Button } from '../../components/button'
+import Link from 'next/link'
+import { ContactForm } from '@/components/contactForm'
 
 const NavMenu = () => {
   return (
@@ -18,7 +18,7 @@ const NavMenu = () => {
         </li>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default NavMenu;
+export default NavMenu

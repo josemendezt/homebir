@@ -1,14 +1,11 @@
-import React, { useRef } from 'react';
-import * as THREE from 'three';
-import { Html, Stage, useGLTF, useProgress } from '@react-three/drei';
+import React, { useRef } from 'react'
+import * as THREE from 'three'
+import { Html, Stage, useGLTF, useProgress } from '@react-three/drei'
 
 export function LoaderModel(props: any) {
-  const { nodes, materials } = useGLTF(
-    '/hombir_models/HOMBIRupdate1.glb'
-  ) as any;
+  const { nodes, materials } = useGLTF('/hombir_models/HOMBIRupdate1.glb') as any
 
-  const { active, progress, errors, item, loaded, total } =
-    useProgress();
+  const { active, progress, errors, item, loaded, total } = useProgress()
 
   return (
     <group {...props} dispose={null}>
@@ -20,12 +17,7 @@ export function LoaderModel(props: any) {
         position={[-3.101, 0.017, 4.564]}
         scale={0.791}
       >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.AparmentFloor.geometry}
-          material={materials.Floor_material}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.AparmentFloor.geometry} material={materials.Floor_material} />
         <mesh
           castShadow
           receiveShadow
@@ -248,18 +240,8 @@ export function LoaderModel(props: any) {
           scale={1.748}
         >
           <group position={[-0.59, 0.025, 0.023]}>
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.WindowL002.geometry}
-              material={materials.Window_material}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.WindowL002_1.geometry}
-              material={materials.Glass_material}
-            />
+            <mesh castShadow receiveShadow geometry={nodes.WindowL002.geometry} material={materials.Window_material} />
+            <mesh castShadow receiveShadow geometry={nodes.WindowL002_1.geometry} material={materials.Glass_material} />
             <mesh
               castShadow
               receiveShadow
@@ -269,18 +251,8 @@ export function LoaderModel(props: any) {
             />
           </group>
           <group position={[0.59, 0.025, 0.063]}>
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.WindowR002.geometry}
-              material={materials.Window_material}
-            />
-            <mesh
-              castShadow
-              receiveShadow
-              geometry={nodes.WindowR002_1.geometry}
-              material={materials.Glass_material}
-            />
+            <mesh castShadow receiveShadow geometry={nodes.WindowR002.geometry} material={materials.Window_material} />
+            <mesh castShadow receiveShadow geometry={nodes.WindowR002_1.geometry} material={materials.Glass_material} />
             <mesh
               castShadow
               receiveShadow
@@ -298,30 +270,10 @@ export function LoaderModel(props: any) {
           />
         </mesh>
         <group position={[5.828, 0.043, -9.314]} scale={1.264}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Window006.geometry}
-            material={materials.PVC}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Window006_1.geometry}
-            material={materials.Plastic}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Window006_2.geometry}
-            material={materials.Glass}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Window006_3.geometry}
-            material={materials.Marble}
-          />
+          <mesh castShadow receiveShadow geometry={nodes.Window006.geometry} material={materials.PVC} />
+          <mesh castShadow receiveShadow geometry={nodes.Window006_1.geometry} material={materials.Plastic} />
+          <mesh castShadow receiveShadow geometry={nodes.Window006_2.geometry} material={materials.Glass} />
+          <mesh castShadow receiveShadow geometry={nodes.Window006_3.geometry} material={materials.Marble} />
         </group>
       </mesh>
       <mesh
@@ -332,18 +284,8 @@ export function LoaderModel(props: any) {
         position={[-2.972, 0.017, 1.26]}
         scale={0.791}
       >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Baseboard.geometry}
-          material={materials.Baseboard_material}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Floor.geometry}
-          material={materials.Floor_material}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Baseboard.geometry} material={materials.Baseboard_material} />
+        <mesh castShadow receiveShadow geometry={nodes.Floor.geometry} material={materials.Floor_material} />
       </mesh>
       <mesh
         castShadow
@@ -354,12 +296,7 @@ export function LoaderModel(props: any) {
         rotation={[0, -0.009, 0]}
         scale={0.791}
       >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Baseboard001.geometry}
-          material={materials.Baseboard_material}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Baseboard001.geometry} material={materials.Baseboard_material} />
       </mesh>
       <mesh
         castShadow
@@ -378,43 +315,14 @@ export function LoaderModel(props: any) {
         rotation={[-Math.PI, 1.566, -Math.PI]}
         scale={0.791}
       >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Baseboard002.geometry}
-          material={materials.Baseboard_material}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Baseboard002.geometry} material={materials.Baseboard_material} />
       </mesh>
-      <group
-        position={[-2.687, 0.107, 2.32]}
-        rotation={[-2.024, 1.564, 2.019]}
-        scale={0.791}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle002.geometry}
-          material={materials.ceramic}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle002_1.geometry}
-          material={materials.metal}
-        />
+      <group position={[-2.687, 0.107, 2.32]} rotation={[-2.024, 1.564, 2.019]} scale={0.791}>
+        <mesh castShadow receiveShadow geometry={nodes.Circle002.geometry} material={materials.ceramic} />
+        <mesh castShadow receiveShadow geometry={nodes.Circle002_1.geometry} material={materials.metal} />
         <group position={[0, 0.402, 0.139]}>
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Circle003.geometry}
-            material={materials.ceramic}
-          />
-          <mesh
-            castShadow
-            receiveShadow
-            geometry={nodes.Circle003_1.geometry}
-            material={materials.metal}
-          />
+          <mesh castShadow receiveShadow geometry={nodes.Circle003.geometry} material={materials.ceramic} />
+          <mesh castShadow receiveShadow geometry={nodes.Circle003_1.geometry} material={materials.metal} />
         </group>
       </group>
       <mesh
@@ -463,23 +371,9 @@ export function LoaderModel(props: any) {
         material={materials.Plastic_Handle_material}
         position={[-1.621, 0.475, -2.783]}
       />
-      <group
-        position={[-2.171, 0.136, 1.346]}
-        rotation={[1.577, -0.037, -0.003]}
-        scale={0.734}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube027.geometry}
-          material={materials.Aerator_Plastic}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube027_1.geometry}
-          material={materials.Aerator_Holes_Steel}
-        />
+      <group position={[-2.171, 0.136, 1.346]} rotation={[1.577, -0.037, -0.003]} scale={0.734}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube027.geometry} material={materials.Aerator_Plastic} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube027_1.geometry} material={materials.Aerator_Holes_Steel} />
       </group>
       <mesh
         castShadow
@@ -562,23 +456,9 @@ export function LoaderModel(props: any) {
         rotation={[1.577, -0.037, -0.003]}
         scale={0.734}
       />
-      <group
-        position={[-2.171, 0.136, 1.346]}
-        rotation={[1.577, -0.037, -0.003]}
-        scale={0.734}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube017.geometry}
-          material={materials.Mirror}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube017_1.geometry}
-          material={materials.Glass_Back}
-        />
+      <group position={[-2.171, 0.136, 1.346]} rotation={[1.577, -0.037, -0.003]} scale={0.734}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube017.geometry} material={materials.Mirror} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube017_1.geometry} material={materials.Glass_Back} />
       </group>
       <mesh
         castShadow
@@ -589,23 +469,9 @@ export function LoaderModel(props: any) {
         rotation={[1.577, -0.037, -0.003]}
         scale={0.734}
       />
-      <group
-        position={[-2.171, 0.136, 1.346]}
-        rotation={[1.577, -0.037, -0.003]}
-        scale={0.734}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle.geometry}
-          material={materials.Steel_2}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Circle_1.geometry}
-          material={materials.Material}
-        />
+      <group position={[-2.171, 0.136, 1.346]} rotation={[1.577, -0.037, -0.003]} scale={0.734}>
+        <mesh castShadow receiveShadow geometry={nodes.Circle.geometry} material={materials.Steel_2} />
+        <mesh castShadow receiveShadow geometry={nodes.Circle_1.geometry} material={materials.Material} />
       </group>
       <mesh
         castShadow
@@ -616,23 +482,14 @@ export function LoaderModel(props: any) {
         rotation={[1.577, -0.037, -0.003]}
         scale={0.734}
       />
-      <group
-        position={[1.268, 0.873, 4.312]}
-        rotation={[Math.PI, -0.846, Math.PI / 2]}
-        scale={0.086}
-      >
+      <group position={[1.268, 0.873, 4.312]} rotation={[Math.PI, -0.846, Math.PI / 2]} scale={0.086}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.BezierCurve008_1.geometry}
           material={materials['Touched Plastic Rough']}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.BezierCurve008_2.geometry}
-          material={materials.chrome}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.BezierCurve008_2.geometry} material={materials.chrome} />
       </group>
       <mesh
         castShadow
@@ -814,23 +671,9 @@ export function LoaderModel(props: any) {
         rotation={[0, -1.566, 0]}
         scale={0.691}
       />
-      <group
-        position={[2.88, 0.835, 3.59]}
-        rotation={[0, -1.566, 0]}
-        scale={0.691}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube213.geometry}
-          material={materials['Glass dark.001']}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube213_1.geometry}
-          material={materials['Basic glass.001']}
-        />
+      <group position={[2.88, 0.835, 3.59]} rotation={[0, -1.566, 0]} scale={0.691}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube213.geometry} material={materials['Glass dark.001']} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube213_1.geometry} material={materials['Basic glass.001']} />
       </group>
       <mesh
         castShadow
@@ -868,23 +711,14 @@ export function LoaderModel(props: any) {
         rotation={[0, -1.566, 0]}
         scale={0.691}
       />
-      <group
-        position={[2.785, 1.062, 3.591]}
-        rotation={[0, -1.566, 0]}
-        scale={0.691}
-      >
+      <group position={[2.785, 1.062, 3.591]} rotation={[0, -1.566, 0]} scale={0.691}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Cube214.geometry}
           material={materials['Black Brushed Aluminum']}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube214_1.geometry}
-          material={materials['timer.001']}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Cube214_1.geometry} material={materials['timer.001']} />
       </group>
       <mesh
         castShadow
@@ -958,23 +792,14 @@ export function LoaderModel(props: any) {
         rotation={[0, -1.566, 0]}
         scale={0.691}
       />
-      <group
-        position={[1.266, 0.754, 4.315]}
-        rotation={[Math.PI, -0.846, Math.PI]}
-        scale={0.691}
-      >
+      <group position={[1.266, 0.754, 4.315]} rotation={[Math.PI, -0.846, Math.PI]} scale={0.691}>
         <mesh
           castShadow
           receiveShadow
           geometry={nodes.Cylinder022.geometry}
           material={materials['Touched Plastic Rough']}
         />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cylinder022_1.geometry}
-          material={materials.chrome}
-        />
+        <mesh castShadow receiveShadow geometry={nodes.Cylinder022_1.geometry} material={materials.chrome} />
       </group>
       <mesh
         castShadow
@@ -985,11 +810,7 @@ export function LoaderModel(props: any) {
         rotation={[Math.PI, -0.846, Math.PI]}
         scale={0.691}
       />
-      <group
-        position={[2.782, 1.055, 3.482]}
-        rotation={[Math.PI / 2, 0, 1.566]}
-        scale={0.014}
-      >
+      <group position={[2.782, 1.055, 3.482]} rotation={[Math.PI / 2, 0, 1.566]} scale={0.014}>
         <mesh
           castShadow
           receiveShadow
@@ -1102,23 +923,9 @@ export function LoaderModel(props: any) {
         rotation={[Math.PI, -0.001, Math.PI]}
         scale={0.657}
       />
-      <group
-        position={[0.523, 1.044, 3.954]}
-        rotation={[-3.038, 0.069, 3.134]}
-        scale={0.657}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube032.geometry}
-          material={materials['Material.004']}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube032_1.geometry}
-          material={materials['Material.008']}
-        />
+      <group position={[0.523, 1.044, 3.954]} rotation={[-3.038, 0.069, 3.134]} scale={0.657}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube032.geometry} material={materials['Material.004']} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube032_1.geometry} material={materials['Material.008']} />
       </group>
       <mesh
         castShadow
@@ -1175,29 +982,10 @@ export function LoaderModel(props: any) {
         rotation={[Math.PI, -0.001, Math.PI]}
         scale={0.657}
       />
-      <group
-        position={[0.28, 0.64, 4.318]}
-        rotation={[Math.PI, -0.001, Math.PI]}
-        scale={0.657}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube025.geometry}
-          material={materials.DarkMetal}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube025_1.geometry}
-          material={materials.GlassB}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube025_2.geometry}
-          material={materials.UITexture}
-        />
+      <group position={[0.28, 0.64, 4.318]} rotation={[Math.PI, -0.001, Math.PI]} scale={0.657}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube025.geometry} material={materials.DarkMetal} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube025_1.geometry} material={materials.GlassB} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube025_2.geometry} material={materials.UITexture} />
       </group>
       <mesh
         castShadow
@@ -1248,7 +1036,7 @@ export function LoaderModel(props: any) {
         scale={0.639}
       />
     </group>
-  );
+  )
 }
 
-useGLTF.preload('/hombir_models/HOMBIRupdate1.glb');
+useGLTF.preload('/hombir_models/HOMBIRupdate1.glb')

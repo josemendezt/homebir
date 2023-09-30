@@ -1,12 +1,6 @@
-import * as React from 'react';
+import * as React from 'react'
 const SvgComponent = (props: any) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={props.width}
-    height={props.height}
-    viewBox="0 0 810 810"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} viewBox="0 0 810 810" {...props}>
     <defs>
       <clipPath id="a">
         <path d="M473 292h243v363.852H473Zm0 0" />
@@ -53,5 +47,5 @@ const SvgComponent = (props: any) => (
       />
     </g>
   </svg>
-);
-export default SvgComponent;
+)
+export default SvgComponent

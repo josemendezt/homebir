@@ -1,15 +1,15 @@
 export interface Positions {
-  x: number;
-  y: number;
-  z: number;
+  x: number
+  y: number
+  z: number
 }
 
 export interface Angles {
-  xAngle: number;
-  yAngle: number;
+  xAngle: number
+  yAngle: number
 }
 
 export interface CameraCoords {
-  position: Positions;
-  rotate: Angles;
+  position: Positions
+  rotate: Angles
 }

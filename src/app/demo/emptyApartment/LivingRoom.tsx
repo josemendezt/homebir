@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const LivingRoom = React.memo(({ nodes, materials }: any) => {
   return (
@@ -79,23 +79,9 @@ const LivingRoom = React.memo(({ nodes, materials }: any) => {
         material={materials.Plastic_Handle_material}
         position={[-1.621, 0.475, -2.783]}
       />
-      <group
-        position={[-2.171, 0.136, 1.346]}
-        rotation={[1.577, -0.037, -0.003]}
-        scale={0.734}
-      >
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube027.geometry}
-          material={materials.Aerator_Plastic}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cube027_1.geometry}
-          material={materials.Aerator_Holes_Steel}
-        />
+      <group position={[-2.171, 0.136, 1.346]} rotation={[1.577, -0.037, -0.003]} scale={0.734}>
+        <mesh castShadow receiveShadow geometry={nodes.Cube027.geometry} material={materials.Aerator_Plastic} />
+        <mesh castShadow receiveShadow geometry={nodes.Cube027_1.geometry} material={materials.Aerator_Holes_Steel} />
       </group>
       {/* <mesh
         castShadow
@@ -174,7 +160,9 @@ const LivingRoom = React.memo(({ nodes, materials }: any) => {
         scale={0.657}
       /> */}
     </>
-  );
-});
+  )
+})
 
-export default LivingRoom;
+LivingRoom.displayName = 'LivingRoom'
+
+export default LivingRoom
