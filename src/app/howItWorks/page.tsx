@@ -15,7 +15,7 @@ export default function HowItWorks() {
          text-base -z-10 mt-60 sm:mt-8 sm:h-full h-[60vh]`}
         >
           <div className="flex flex-wrap justify-around -mt-[440px] sm:-mt-0">
-            <div className="w-72 my-4 bg-white text-secondary h-[420px] px-4 rounded-sm shadow-gray-900 shadow-lg">
+            <div className="w-72 my-4 bg-white text-secondary h-[450px] px-4 rounded-sm shadow-gray-900 shadow-lg">
               <div>
                 <Meeting width={250} height={200} fill={'#375052'} />
               </div>
@@ -25,7 +25,7 @@ export default function HowItWorks() {
                 potential upgrades, setting the foundation for your vision.
               </p>
             </div>
-            <div className="w-72 my-4 bg-white text-secondary h-[420px] px-4 rounded-sm shadow-gray-900 shadow-lg">
+            <div className="w-72 my-4 bg-white text-secondary h-[450px] px-4 rounded-sm shadow-gray-900 shadow-lg">
               <div>
                 <Developing width={260} height={200} fill={'#375052'} />
               </div>
@@ -35,7 +35,7 @@ export default function HowItWorks() {
                 for user engagement.
               </p>
             </div>
-            <div className="w-72 my-4 bg-white text-secondary h-[420px] px-4 rounded-sm shadow-gray-900 shadow-lg">
+            <div className="w-72 my-4 bg-white text-secondary h-[450px] px-4 rounded-sm shadow-gray-900 shadow-lg">
               <div>
                 <MagicHouse width={260} height={200} fill={'#375052'} />
               </div>
@@ -45,7 +45,7 @@ export default function HowItWorks() {
                 visualize its unique features. Users can interact with materials and upgrades, gaining insights into their choices.
               </p>
             </div>
-            <div className="w-72 my-4 bg-white text-secondary h-[420px] px-4 rounded-sm shadow-gray-900 shadow-lg">
+            <div className="w-72 my-4 bg-white text-secondary h-[450px] px-4 rounded-sm shadow-gray-900 shadow-lg">
               <div>
                 <Navigating width={260} height={200} fill={'#375052'} />
               </div>
