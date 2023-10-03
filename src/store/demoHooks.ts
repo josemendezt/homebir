@@ -27,8 +27,10 @@ interface IslandSwitch {
 }
 
 const loadTexture = (url: string) => {
-  const loader = new THREE.TextureLoader()
-  return loader.load(url)
+  if (typeof window !== 'undefined') {
+    const loader = new THREE.TextureLoader()
+    return loader.load(url)
+  }
 }
 
 export const useToggleDemo = create<DemoActivation>()(set => ({
@@ -93,10 +95,11 @@ export const useKitchenCounterTops = create<TextureState>()(set => ({
 
 export const useBathroomWalls = create<TextureState>()(set => {
   const texture = loadTexture(bathTiles[0].map)
-  texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-  texture.repeat.x = 6
-  texture.repeat.y = 6
-
+  if (texture) {
+    texture.wrapS = texture.wrapT = THREE.RepeatWrapping
+    texture.repeat.x = 6
+    texture.repeat.y = 6
+  }
   return {
     material: new THREE.MeshStandardMaterial({
       map: texture,
@@ -108,10 +111,11 @@ export const useBathroomWalls = create<TextureState>()(set => {
     selectMaterial: standardMaterial =>
       set(state => {
         const texture = loadTexture(standardMaterial.map)
-        texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-        texture.repeat.x = 6
-        texture.repeat.y = 6
-
+        if (texture) {
+          texture.wrapS = texture.wrapT = THREE.RepeatWrapping
+          texture.repeat.x = 6
+          texture.repeat.y = 6
+        }
         const material = new THREE.MeshStandardMaterial({
           map: texture,
           normalMap: loadTexture(standardMaterial.normalMap),
@@ -160,9 +164,11 @@ export const useBathroomFloor = create<TextureState>()(set => {
 
 export const useFloors = create<TextureState>()(set => {
   const texture = loadTexture(floors[0].map)
-  texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-  texture.repeat.x = 5
-  texture.repeat.y = 5
+  if (texture) {
+    texture.wrapS = texture.wrapT = THREE.RepeatWrapping
+    texture.repeat.x = 5
+    texture.repeat.y = 5
+  }
   return {
     material: new THREE.MeshStandardMaterial({
       map: texture,
@@ -174,9 +180,11 @@ export const useFloors = create<TextureState>()(set => {
     selectMaterial: standardMaterial =>
       set(state => {
         const texture = loadTexture(standardMaterial.map)
-        texture.wrapS = texture.wrapT = THREE.RepeatWrapping
-        texture.repeat.x = 5
-        texture.repeat.y = 5
+        if (texture) {
+          texture.wrapS = texture.wrapT = THREE.RepeatWrapping
+          texture.repeat.x = 5
+          texture.repeat.y = 5
+        }
         const material = new THREE.MeshStandardMaterial({
           map: texture,
           normalMap: loadTexture(standardMaterial.normalMap),
