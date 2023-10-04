@@ -1,14 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import {
-  Sheet,
-  SheetTrigger,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetDescription,
-  SheetFooter,
-  SheetClose
-} from '@/components/sheet'
+import { Sheet, SheetTrigger, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetFooter, SheetClose } from '@/components/sheet'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/accordion'
 
 import { ArrowLeft, Focus, Inspect, Link, MenuIcon } from 'lucide-react'
@@ -127,6 +118,7 @@ const SideMenu = () => {
                           <Image
                             width={100}
                             height={100}
+                            priority
                             loading={kitchenCabinets.length > 12 ? 'lazy' : 'eager'}
                             alt={cab.name}
                             src={cab.map}
@@ -159,6 +151,7 @@ const SideMenu = () => {
                             loading={kitchenCabinets.length > 12 ? 'lazy' : 'eager'}
                             alt={cab.name}
                             src={cab.map}
+                            priority
                           />
                           {cab.name}
                         </div>
@@ -199,7 +192,7 @@ const SideMenu = () => {
                             selectBathWall(cab)
                           }}
                         >
-                          <Image width={100} height={100} alt={cab.name} src={cab.map} />
+                          <Image width={100} height={100} alt={cab.name} src={cab.map} priority />
                           {cab.name}
                         </div>
                       ))}
@@ -222,7 +215,7 @@ const SideMenu = () => {
                             selectBathFloor(cab)
                           }}
                         >
-                          <Image width={100} height={100} alt={cab.name} src={cab.map} />
+                          <Image width={100} height={100} alt={cab.name} src={cab.map} priority />
                           {cab.name}
                         </div>
                       ))}
@@ -252,7 +245,7 @@ const SideMenu = () => {
                               selectFloors(cab)
                             }}
                           >
-                            <Image width={100} className="mx-auto" height={100} alt={cab.name} src={cab.map} />
+                            <Image width={100} className="mx-auto" height={100} alt={cab.name} src={cab.map} priority />
                             {cab.name}
                           </div>
                         ))}
