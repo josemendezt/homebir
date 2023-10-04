@@ -24,10 +24,10 @@ export const kitchenCabinets = [
   {
     id: '3',
     name: 'Beige',
-    map: '/textures/Marble/Marble015_2K_Color.png',
-    normalMap: '/textures/Marble/Marble015_2K_NormalGL.png',
-    roughnessMap: '/textures/Marble/Marble015_2K_Roughness.png',
-    displacementMap: '/textures/Marble/Marble015_2K_Displacement.png',
+    map: '/textures/marble/Marble015_2K_Color.png',
+    normalMap: '/textures/marble/Marble015_2K_NormalGL.png',
+    roughnessMap: '/textures/marble/Marble015_2K_Roughness.png',
+    displacementMap: '/textures/marble/Marble015_2K_Displacement.png',
     roughness: 0.4,
     metalness: 0.4
   },
@@ -67,10 +67,10 @@ export const kitchenCountertop = [
   {
     id: '3',
     name: 'Beige',
-    map: '/textures/Marble/Marble015_2K_Color.png',
-    normalMap: '/textures/Marble/Marble015_2K_NormalGL.png',
-    roughnessMap: '/textures/Marble/Marble015_2K_Roughness.png',
-    displacementMap: '/textures/Marble/Marble015_2K_Displacement.png',
+    map: '/textures/marble/Marble015_2K_Color.png',
+    normalMap: '/textures/marble/Marble015_2K_NormalGL.png',
+    roughnessMap: '/textures/marble/Marble015_2K_Roughness.png',
+    displacementMap: '/textures/marble/Marble015_2K_Displacement.png',
     roughness: 0.4,
     metalness: 0.4
   },
